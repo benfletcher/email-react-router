@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 export default function App(props) {
-  console.log("app");
+  // console.log("app");
   // console.log(props.params.mailbox_name);
 
 	return (
@@ -11,6 +11,9 @@ export default function App(props) {
 				Gmail-Killer Email App
       </h1>
       <nav className="navbar">
+        <Link to={"/"}>
+          Home
+        </Link>
         <Link to={"/inbox"}>
           Inbox
         </Link>
