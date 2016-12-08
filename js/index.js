@@ -8,12 +8,14 @@ import App from './components/app';
 import EmailContainer from './components/email-container';
 import EmailListContainer from './components/email-list-container';
 
+console.log("index");
+
 const routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
-			<IndexRoute component={EmailListContainer} />
 			<Route path=":mailbox_name" component={EmailContainer} />
-		</Route>
+			<IndexRoute component={EmailListContainer} />
+</Route>
 	</Router>
 );
 

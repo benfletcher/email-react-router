@@ -2,6 +2,7 @@ import React from 'react';
 import Email from './email'
 
 export default function EmailList(props)  {
+	console.log("email-list");
 	const emails = Object.keys(props.emails)
 	.map((emailId, index) => {
 		const email = props.emails[emailId];
@@ -12,10 +13,10 @@ export default function EmailList(props)  {
 			</li>
 			);
 	});
-  
+
 	return (
 		<ul>
-			{emails}
+			{"emails"}
 		</ul>
 		);
 };

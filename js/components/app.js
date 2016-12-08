@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function App(props) {
-
-  console.log(props.params.mailbox_name);
+  console.log("app");
+  // console.log(props.params.mailbox_name);
 
 	return (
 		<div className="app">
@@ -14,7 +14,7 @@ export default function App(props) {
           spam link */}
       </nav>
 			<div>
-				{/* {props.children} */}
+				{props.children}
 			</div>
 		</div>
 	);

@@ -1,10 +1,11 @@
 import React from 'react';
-
 import EMAILS from '../emails';
 import Email from './email';
 
 export default function EmailContainer(props) {
-    const email = EMAILS[props.params.mailbox_name];
+  console.log("email-container");
+
+    const email = EMAILS[props.params.mailbox_name][0];
     return (
       <Email
         id={email.id}
