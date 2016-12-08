@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default function App(props) {
   console.log("app");
@@ -9,8 +10,13 @@ export default function App(props) {
 			<h1>
 				Gmail-Killer Email App
       </h1>
-      <nav>
-        {"SIDEBAR: inbox / spam links"}
+      <nav className="navbar">
+        <Link to={"/inbox"}>
+          Inbox
+        </Link>
+        <Link to={"/spam"}>
+          Spam
+        </Link>
       </nav>
 			<div>
 				{props.children}

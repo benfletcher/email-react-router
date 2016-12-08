@@ -13,9 +13,9 @@ console.log("index");
 const routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
+      {/* <IndexRoute component={EmailListContainer} /> */}
 			<Route path=":mailbox_name" component={EmailContainer} />
-			<IndexRoute component={EmailListContainer} />
-</Route>
+    </Route>
 	</Router>
 );
 
