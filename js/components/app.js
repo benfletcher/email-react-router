@@ -10,8 +10,7 @@ export default function App(props) {
 				Gmail-Killer Email App
       </h1>
       <nav>
-        {/* inbox link
-          spam link */}
+        {"SIDEBAR: inbox / spam links"}
       </nav>
 			<div>
 				{props.children}

@@ -2,7 +2,8 @@ import React from 'react';
 import Email from './email'
 
 export default function EmailList(props)  {
-	console.log("email-list");
+	console.log("email-list", props  );
+
 	const emails = Object.keys(props.emails)
 	.map((emailId, index) => {
 		const email = props.emails[emailId];
